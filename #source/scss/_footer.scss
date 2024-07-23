@@ -150,3 +150,36 @@ footer.footer {
 
 
 }
+
+@media(max-width:575.8px) {
+    footer.footer .fbg.mob {
+        display: block;
+    }
+
+    footer.footer .fbg {
+        display: none;
+    }
+
+    .footer__wrapper .footer__adress,
+    .footer__wrapper .footer__logo {
+        margin-bottom: 32px;
+    }
+
+    .footer__wrapper .footer__arlogo,
+    .footer__wrapper .footer__soc,
+    .footer__wrapper .footer__tels {
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .footer__wrapper .footer__soc ul {
+        max-width: 160px;
+        margin: 0 auto 20px;
+    }
+
+    .footer__arlogo {
+        margin-bottom: 0 !important;
+    }
+}

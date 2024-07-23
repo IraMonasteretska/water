@@ -421,6 +421,10 @@
     display: none;
 }
 
+.fbg.mob {
+    display: none;
+}
+
 @media(max-width:1550.8px) {
     .benefitbox img {
         width: 50px;
@@ -694,8 +698,30 @@
         margin-bottom: 0;
     }
 
+    .contform {
+        padding: 24px 16px;
+    }
 
-    
+    .contform .title {
+        font-size: 24px;
+        margin-bottom: 19px;
+    }
+
+    .contform .inputfield label {
+        padding-left: 16px;
+    }
+
+    .contform .inputfield textarea {
+        height: 143px;
+    }
+
+    .contform .checkfield label {
+        font-size: 12px;
+    }
+
+   
+
+
 
     .production h3,
     .recomended h2 {
