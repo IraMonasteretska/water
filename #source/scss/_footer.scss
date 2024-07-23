@@ -1,0 +1,152 @@
+footer.footer {
+    padding: 40px 0;
+    position: relative;
+    z-index: 2;
+
+    .fbg {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer__logo {
+        img {
+            max-width: 196px;
+        }
+    }
+
+    .footer__adress {
+        max-width: 308px;
+
+        p {
+            margin: 0;
+            color: #fff;
+            font-family: 'FixelText';
+        }
+    }
+
+    .footer__tels {
+        max-width: 150px;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                a {
+                    font-family: 'FixelText';
+                    color: #fff;
+                    text-decoration: none;
+                    transition: 0.3s;
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .footer__soc {
+        max-width: 120px;
+
+        ul {
+            list-style-type: none;
+            margin: 0 0 14px 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            img {
+                max-width: 24px;
+            }
+
+            li {
+                a {
+                    transition: 0.3s;
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+
+        .emaillink {
+            color: #fff;
+            font-family: 'FixelText';
+            text-decoration: none;
+            transition: 0.3s;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .footer__arlogo {
+        max-width: 83px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .footer__wrapper {
+        flex-wrap: wrap;
+
+        .footer__logo,
+        .footer__adress {
+            max-width: 100%;
+            flex: 0 0 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .footer__tels,
+        .footer__soc,
+        .footer__arlogo {
+            max-width: 150px;
+            flex: 0 0 150px;
+        }
+
+        .footer__soc {
+            text-align: center;
+            max-width: 120px;
+        }
+
+        .footer__arlogo {
+            text-align: right;
+
+            img {
+                max-width: 100px;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+}
