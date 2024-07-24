@@ -8,6 +8,10 @@ $(document).ready(function () {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
         breakpoints: {
             320: {
                 spaceBetween: 10,
@@ -40,10 +44,10 @@ $(document).ready(function () {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-        // autoplay: {
-        //     delay: 3000,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
         breakpoints: {
             320: {
                 slidesPerView: 1.3,
@@ -103,7 +107,7 @@ $(document).ready(function () {
     });
 
     $('.mainsection__left .redbtn').click(function () {
-        $('.mainsection__left').addClass('active');
+        $('.hiddentext').slideToggle();
     });
 
     $('.burger').click(function(){
