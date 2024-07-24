@@ -637,7 +637,7 @@
 
 @media(max-width:575.8px) {
     .mainsection {
-        padding: 30px 0 0px;
+        padding: 25px 0 0px;
     }
 
     .mainsection__right video {
@@ -726,7 +726,8 @@
     }
 
     .mainsection__left p {
-        font-size: 14px;
+        font-size: 13px;
+        margin-bottom: 15px;
     }
 
     .production h3,
@@ -735,17 +736,17 @@
     }
 
     .mainsection__left h1 {
-        font-size: 24px;
+        font-size: 22px;
         margin-bottom: 5px;
 
         span {
-            font-size: 24px;
+            font-size: 22px;
             display: inline;
         }
     }
 
     .benefitbox p {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
