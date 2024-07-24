@@ -721,7 +721,13 @@
         margin-top: 0;
     }
 
+    .mainsection__right {
+        margin-bottom: 15px;
+    }
 
+    .mainsection__left p {
+        font-size: 14px;
+    }
 
     .production h3,
     .recomended h2 {
@@ -730,12 +736,16 @@
 
     .mainsection__left h1 {
         font-size: 24px;
-        margin-bottom: 14px;
+        margin-bottom: 5px;
 
         span {
             font-size: 24px;
             display: inline;
         }
+    }
+
+    .benefitbox p {
+        font-size: 14px;
     }
 }
 
