@@ -108,6 +108,8 @@ $(document).ready(function () {
 
     $('.burger').click(function(){
         $(this).toggleClass('on');
+        $('.header__wrapper').toggleClass('show');
+        $('.menubg').toggleClass('active');
     })
 
 })
