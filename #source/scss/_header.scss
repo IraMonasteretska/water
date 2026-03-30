@@ -175,6 +175,19 @@ header.header {
     display: none;
 }
 
+// 30.03
+
+.header.header {
+    background: rgba(#F4F4F2, 0.6);
+
+    &.scroll {
+        background: #fff;
+    }
+}
+
+
+// 30.03 - end
+
 @media(max-width:1550.8px) {
     .header__logo img {
         max-width: 170px;

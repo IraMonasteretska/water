@@ -4,12 +4,13 @@ $(document).ready(function () {
         slidesPerView: 3,
         loop: true,
         centeredSlides: true,
+        speed: 700,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
         autoplay: {
-            delay: 3000,
+            delay: 4000,
             disableOnInteraction: false,
         },
         breakpoints: {

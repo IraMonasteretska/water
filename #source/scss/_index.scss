@@ -21,8 +21,7 @@
         margin-bottom: 20px;
     }
 
-    &.active {
-    }
+    &.active {}
 
     .hiddentext {
         display: none;
@@ -423,6 +422,48 @@
     display: none;
 }
 
+
+// 30.03
+.mainsection__right {
+    video {
+        vertical-align: top;
+        border-radius: 20px;
+    }
+}
+
+.mainsection__left {
+    max-width: 590px;
+}
+
+.mainsection {
+    position: relative;
+
+    .container {
+        // z-index: 1;
+        // position: relative;
+
+        .col-lg-10 {
+            position: initial;
+        }
+
+        .col-xl-6 {
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+
+.heroelement {
+    position: absolute;
+    left: 0;
+    top: 51%;
+    max-width: 615px;
+}
+
+
+
+// 30.03 - end
+
 @media(max-width:1550.8px) {
     .benefitbox img {
         width: 50px;
@@ -491,6 +532,7 @@
     }
 
 }
+
 
 @media(max-width:1199.8px) {
     .mainsection__left h1 {
@@ -754,11 +796,8 @@
         }
     }
 
-    
+
 }
-
-
-
 
 @media(min-width:1700px) {
     .recomended__bg {
@@ -774,3 +813,92 @@
 
 
 // font-family: 'FixelText';
+
+@media(max-width:1499.8px) {
+    .heroelement {
+        max-width: 400px;
+        top: 55%;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .mainsection__right {
+        margin-top: 30px;
+    }
+
+    .heroelement {
+        top: 350px;
+    }
+
+    .mainsection {
+        .col-xl-6:nth-child(1) {
+            order: 1;
+        }
+
+        .col-xl-6:nth-child(2) {
+            order: 3;
+        }
+
+        .col-lg-10 {
+            order: 2;
+        }
+    }
+
+    .benefits {
+        margin-top: 130px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .mainsection {
+        .col-xl-6:nth-child(1) {
+            order: 2;
+        }
+
+        .col-xl-6:nth-child(2) {
+            order: 1;
+        }
+
+        .col-lg-10 {
+            order: 3;
+        }
+    }
+
+    .mainsection__right {
+        margin-top: 7px;
+        margin-bottom: 32px;
+    }
+
+    .mainsection__left h1 {
+        font-size: 24px;
+        margin-bottom: 14px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .mainsection__left p {
+        font-size: 16px;
+    }
+
+
+    .heroelement {
+        position: relative;
+        // max-width: 334px;
+        width: 100%;
+        top: 0;
+        margin-left: -15px;
+        margin-top: 10px;
+    }
+
+    .benefits {
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:414.8px) {
+    .heroelement {
+        max-width: 334px;
+    }
+}
