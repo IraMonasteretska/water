@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var swiper = new Swiper(".mySwiper", {
-        
+
         slidesPerView: 3,
         loop: true,
         centeredSlides: true,
@@ -112,10 +112,12 @@ $(document).ready(function () {
         $('.hiddentext').slideToggle();
     });
 
-    $('.burger').click(function(){
+    $('.burger').click(function () {
         $(this).toggleClass('on');
         $('.header__wrapper').toggleClass('show');
         $('.menubg').toggleClass('active');
     })
 
+    // player
+    const player = new Plyr('#player');
 })

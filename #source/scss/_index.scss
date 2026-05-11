@@ -463,21 +463,57 @@
 
 
 // 30.03 - end
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-  border-radius: 16px;
-  overflow: hidden;
+// .video-wrapper {
+//   position: relative;
+//   padding-bottom: 56.25%; /* 16:9 */
+//   height: 0;
+//   border-radius: 16px;
+//   overflow: hidden;
+// }
+
+// .video-wrapper iframe {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+// }
+
+.plyr__control--overlaid {
+    background: #D01F39 !important;
+    opacity: 1 !important;
+    width: 56px !important;
+    height: 56px !important;
+
+    &:hover {
+        background: #d52943 !important;
+    }
 }
 
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.plyr__control--overlaid svg {
+    left: 6px !important;
 }
+
+.plyr--full-ui input[type=range] {
+    color: #d52943 !important;
+}
+
+.plyr--video .plyr__control:focus-visible, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true] {
+    background: #D01F39 !important;
+}
+
+.plyr--video .plyr__controls {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(100%);
+}
+
+.plyr--video:hover .plyr__controls {
+    opacity: 1 !important;
+    pointer-events: initial !important;
+    transform: translateY(0) !important;
+}
+
 
 
 @media(max-width:1550.8px) {
